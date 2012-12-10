@@ -1,0 +1,13 @@
+.header
+  - if true #self.current_user.present?
+    %h1
+      %ul#menu_icon
+        .menu_icon
+          = image_tag("too_logo.jpg", :size => "400x157")
+        = link_to raw('<span class=menu_span></span>'), root_url
+
+            
+
+
+
+  - else
