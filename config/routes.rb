@@ -1,28 +1,30 @@
 Tooapparel::Application.routes.draw do
   
-  resources :quantities
-
-
   resources :categories
-
 
   resources :collections
 
-
-  resources :departments
-
-
   resources :colors
 
+  resources :images
+
+  resources :products
+
+  resources :product_types
 
   resources :sizes
-
 
   resources :styles
 
 
-  resources :products
+  root :to => 'dashboard#welcome'
 
+
+  # Routes for ActiveAdmin
+  ActiveAdmin.routes(self)
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -73,7 +75,6 @@ Tooapparel::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'dashboard#welcome'
 
   # See how all your routes lay out with "rake routes"
 

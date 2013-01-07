@@ -5,8 +5,24 @@
         .menu_icon
           = image_tag("too_logo.jpg", :size => "400x157")
         = link_to raw('<span class=menu_span></span>'), root_url
-
-            
+      %ul#menu_item
+        
+        %li
+          = link_to "Collections", collections_path
+        %li
+          = link_to "Categories", categories_path
+        %li
+          = link_to "Product Types", product_types_path
+        %li
+          = link_to "Products", products_path
+        %li
+          = link_to "Styles", styles_path
+        %li
+          = link_to "Colors", colors_path
+        %li
+          = link_to "Sizes", sizes_path
+        %li
+          = link_to "Images", images_path
 
 
 

@@ -13,6 +13,7 @@ gem 'net-ldap'               # Implements client access
 gem 'execjs'                 # ExecJS lets you run JavaScript code from Ruby
 gem 'therubyracer', '0.10.2' # Embed the V8 Javascript interpreter into Ruby - 12/2012 - 0.11.0 released but would not compile
 gem 'nokogiri'               # An HTML XML SAX and Reader parser
+gem 'activeadmin'            # Plugin for generating admin style interfaces
 
 # in production environments by default.
 group :assets do
